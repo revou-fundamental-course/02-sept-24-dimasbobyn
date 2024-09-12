@@ -54,6 +54,7 @@ button:hover{
 .left-content,.right-content{
     flex: 1;
     background-color: #7C93C3;
+    flex-direction: row;
     display: none;
 }
 
@@ -78,6 +79,16 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+input[type=number]{
+    width: 95%;
+    height: 30px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 3em;
+    font-size: 16px;
+}
+
 /* Styl Hasil */
 .form-luas-segitiga,.form-keliling-segitiga,.form-luas-jajang-genjang,.form-keliling-jajar-genjang{
     margin: auto;
@@ -87,16 +98,6 @@ input::-webkit-inner-spin-button {
     border-style: solid;
     width: 90%;
     background-color: #295F98;
-}
-
-input[type=number]{
-    width: 95%;
-    height: 30px;
-    padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border-radius: 3em;
-    font-size: 16px;
 }
 
 .hasil-luas-segitiga,.hasil-keliling-segitiga,.hasil-luas-jajar-genjang,.hasil-keliling-jajar-genjang{
@@ -112,3 +113,15 @@ input[type=number]{
     font-size: 16px;
     margin-top: 2em;
 }
+
+@media only screen and (max-width: 800px) {
+    .pilih-bangun-datar{
+        flex-direction: column;
+    }
+    .btn-segitiga{
+        margin-bottom: 10px;
+    }
+    .main-content{
+        flex-direction: column;
+    }
+  }

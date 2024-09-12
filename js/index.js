@@ -61,10 +61,6 @@ function kelilingJajarGenjang() {
     hasilKeliling.innerHTML="Keliling = (" +sisiAlas+ " + " +sisiMiring+ ") X 2" +"<br>Keliling = " +keliling;
 }
 
-
-
-
-
 // Reset Hasil
 function resetLuasSegigtiga(){
     document.getElementById("hasil-luas-segitiga").innerHTML="";
