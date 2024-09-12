@@ -1,9 +1,78 @@
-header h1{
-    /* width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden; */
-    background: #2980b9;
-    /* z-index: 2; */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style Body */
+body{
+    color:#F6F3EA;
+    background-color:#7C93C3;
+}
+.main-tittle{
+    color: aliceblue;
+    margin: 0;
+    text-align: center;
+}
+
+/* Style Button */
+button{
+    color: #F6F3EA;
+    background-color: #55679C;
+    border: 1px #F6F3EA;
+    border-style: solid;
+    border-radius: 10em;
+}
+.pilih-bangun-datar{
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+}
+.btn-segitiga,.btn-jajargenjang{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* Button Hover */
+button:hover{
+    background-color: #1E2A5E;
+}
+/* Button Active */
+.btn-segitiga:active,.btn-jajargenjang:active{
+    background-color: #1E2A5E;
+}
+
+/* Style Main Content */
+.main-content{
+    display: flex;
+    background-color: #55679C;
+    margin: 0px -10x 75px;
+    width: 100%;
+    height: 100%;
+}
+.left-content,.right-content{
+    flex: 1;
+    /* display: none; */
+}
+
+.left-content h1,.right-content h1{
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Style Form */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

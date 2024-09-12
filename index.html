@@ -7,38 +7,56 @@
     <link rel="stylesheet" href="css/style.css">
 </head> 
 <body>
-    <script src="js/index.js"></script>
-    <section class="stred">
-        <header>
-            <h1>Welcome To Kaltik</h1>
-            <p>Sebuah website sederhana untuk menghitung luas dan keliling bangun datar</p>
-        </header>
-            
-    </section>
-    <section>
-        <header>
-            <article>
+    <!-- Header -->
+     <section  class="main-tittle">
+         <header>
+             <h1>Selamat datang di Kaltik</h1>
+             <p>Website menghitung luas dan keliling bangun datar </p>
+             <div class="pilih-bangun-datar">
+                 <button class="btn-segitiga" >SEGITIGA</button>
+                 <button class="btn-jajargenjang">JAJAR GENJANG</button>
+             </div>
+         </header>
+     </section>
+    <!-- Content -->
+     <section class="main-content" id="rumus-segitiga">
+        <!-- Aside Kiri | Luas -->
+        <aside class="left-content" id="luas-segita">
+            <article class="gambar-bangun-datar">
                 <h1>Luas Segitiga</h1>
-                <img src="asset/luas-segitiga.png" alt="Gambar Luas Segitiga">
+                <img src="asset/luas-segitiga.png" alt="Rumus Luas Segitiga" class="">
             </article>
-            <form>
-                <p>Masukan nilai:</p>
-                <div>
-                    <label for="alas">Alas:</label>
-                    <input type="number" name="alas">
-                </div>
-                <div>
-                    <label for="tinggi">Tinggi:</label>
-                    <input type="number" name="alas">
-                </div>
-                <div>
-                    <button type="button" onclick="kelilingSegitiga()">Click Me</button>
-                </div>
-            </form>
-            <div class="hasil">
-                <p id="hasil-keliling">A Paragraph.</p>
-            </div>
-        </header>
-    </section>
+            <!-- Form Luas Segitiga -->
+             <form class="form-luas-segitiga">
+                <input type="number" name="alas-segitiga" id="alas" placeholder="Masukan Nilai Alas Segitiga" required>
+                <input type="number" name="tinggi-segitiga" id="tinggi" placeholder="Masukan Nilai Tinggi Segita" required>
+             </form>
+             <button type="submit" class="btn-hasil">Hasil</button>
+             <div class="hasil">Hasil
+             </div>
+             <button type="submit" class="btn-reset">Reset</button>
+         
+        </aside>
+
+        <!-- Aside Kanan | Keliling -->
+        <aside class="right-content" id="keliling-segita">
+            <article>
+                <h1>Keliling Segitiga</h1>
+                <img src="asset/keliling-segitiga.png" alt="Rumus Keliling Segitiga">
+            </article>
+            <!-- Form Keliling Segitiga -->
+             <form class="form-keliling-segitiga">
+                <input type="number" name="sisi-ab" id="sisi-ab" placeholder="Masukan Nilai Sisi AB" required>
+                <input type="number" name="sisi-bc" id="sisi-bc" placeholder="Masukan Nilai Sisi BC" required>
+                <input type="number" name="sisi-ca" id="sisi-ca" placeholder="Masukan Nilai Sisi CA" required>
+
+             </form>
+             <button type="submit" class="btn-hasil">Hasil</button>
+             <div class="hasil">Hasil
+             </div>
+             <button type="submit" class="btn-reset">Reset</button>
+         
+        </aside>
+     </section>
 </body>
 </html>
