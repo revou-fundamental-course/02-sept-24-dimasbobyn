@@ -53,7 +53,8 @@ button:hover{
 }
 .left-content,.right-content{
     flex: 1;
-    /* display: none; */
+    background-color: #7C93C3;
+    display: none;
 }
 
 .left-content h1,.right-content h1{
@@ -75,4 +76,39 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+/* Styl Hasil */
+.form-luas-segitiga,.form-keliling-segitiga,.form-luas-jajang-genjang,.form-keliling-jajar-genjang{
+    margin: auto;
+    padding: 1em;
+    border: 1px #F6F3EA;
+    border-radius: 2em;
+    border-style: solid;
+    width: 90%;
+    background-color: #295F98;
+}
+
+input[type=number]{
+    width: 95%;
+    height: 30px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 3em;
+    font-size: 16px;
+}
+
+.hasil-luas-segitiga,.hasil-keliling-segitiga,.hasil-luas-jajar-genjang,.hasil-keliling-jajar-genjang{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.btn-hitung,.btn-reset{
+    width: 95%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 3em;
+    font-size: 16px;
+    margin-top: 2em;
 }
